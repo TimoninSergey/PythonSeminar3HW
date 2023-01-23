@@ -5,11 +5,11 @@
  """
 
 def create_list_from_file ():
-    list = []
     path = 'task1.txt'
     data = open(path, 'r')
-    for line in data:
-        list.append(int(line))
+    list = [int(line) for line in data]
+#    for line in data:
+#        list.append(int(line))
     print(list)
     return list
 
